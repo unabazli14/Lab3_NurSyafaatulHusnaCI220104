@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Biodata</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: #f0f8ff;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: #e78ebd;
+            padding: 10px;
+        }
+
+        .navbar a {
+            color: rgb(99, 13, 13);
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        /* Main Container */
+        .container {
+            width: 80%;
+            max-width: 900px;
+            background-color: #bba4fd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.2em;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2.2em;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 2.2em;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        /* Table Styles */
+        .biodata-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .biodata-table th, .biodata-table td {
+            padding: 12px;
+            text-align: left;
+            background-color: #c9e0f3;
+            color: #100f15;
+            border: 1px solid #845703;
+        }
+
+        .biodata-table th {
+            background-color: #c9e0f3;
+            color: rgb(16, 15, 15);
+            font-weight: bold;
+            border: 1px solid #845703;
+        }
+
+        /* Profile Image */
+        /* Profile Image Cell */
+.photo {
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+    padding: 0; /* Remove padding to ensure the image fits */
+}
+
+/* Profile Image */
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the cell without stretching */
+    border-radius: 50%; /* Optional: makes the image circular */
+}
+
+        
+
+        /* Card Layout for Hobbies */
+        .hobbies {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .hobby-card {
+            flex: 1;
+            background-color: #c9e0f3;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .hobby-card h3 {
+            margin-top: 0;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        /* Grid Layout for Campus Life */
+        .campus-grid {
+            display: flex;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            text-align: center;
+        }
+
+        .campus-card {
+            flex: 1;
+            background-color: #c9e0f3;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .campus-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container" id="biodata">
+        <!-- Title -->
+        <h1>My Personal Biodata</h1>
+        <!-- Navigation Bar -->
+<div class="navbar">
+    <a href="#biodata">Biodata</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#campus-life">Campus Life</a>
+</div>
+        <!-- Biodata Table -->
+        <table class="biodata-table">
+            <tr>
+                <th>Name</th>
+                <td>Nur Syafaatul Husna Binti Bazli</td>
+                <td class="photo" rowspan="4"><img src="gambar.jpg" alt="Photo"></td>
+            </tr>
+            <tr>
+                <th>Date of Birth</th>
+                <td>28/07/2001</td>
+            </tr>
+            <tr>
+                <th>Religion</th>
+                <td>Islam</td>
+            </tr>
+            <tr>
+                <th>Race</th>
+                <td>Malay</td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td colspan="2">Jalan Parit</td>
+            </tr>
+            <tr>
+                <th>Town</th>
+                <td colspan="2">Parit Raja</td>
+            </tr>
+            <tr>
+                <th>District</th>
+                <td colspan="2">Batu Pahat</td>
+            </tr>
+            <tr>
+                <th>State</th>
+                <td colspan="2">Johor</td>
+            </tr>
+            <tr>
+                <th>Contact</th>
+                <td colspan="2">0183824099</td>
+            </tr>
+            <tr>
+                <th>Media Social</th>
+                <td colspan="2">unabazli</td>
+            </tr>
+            <tr>
+                <th>Website</th>
+                <td colspan="2"><a href="//unabazli14.github.io/webdev-lab-1/" target="_blank">github.com</a></td>
+            </tr>
+            <tr>
+                <th>Course and Institution</th>
+                <td colspan="2">Web Development, UTHM</td>
+            </tr>
+            <tr>
+                <th>Programming Skills</th>
+                <td colspan="2">HTML,Java,C++,Python</td>
+            </tr>
+            <tr>
+                <th>Personal Interests</th>
+                <td colspan="2">Humble</td>
+            </tr>
+            <tr>
+                <th>Future Plan in 2025</th>
+                <td colspan="2">Software Engineering </td>
+            </tr>
+        </table>
+
+        <!-- Hobbies Section -->
+         <h2>My hobbies</h2>
+        <div class="hobbies" id="hobbies">
+            <div class="hobby-card">
+                <h3>Photography</h3>
+                <p>Capturing moments through my camera.</p>
+            </div>
+            <div class="hobby-card">
+                <h3>Reading</h3>
+                <p>Exploring new worlds through books.</p>
+            </div>
+            <div class="hobby-card">
+                <h3>Travelling</h3>
+                <p>Discovering new places and cultures.</p>
+            </div>
+        </div>
+
+        <!-- Campus Life Section -->
+         <h3>Campus Life</h3>
+        <div class="campus-grid" id="campus-life">
+            <div class="campus-card">
+                <img src="saf.jpg" alt="Conference 2023">
+                <p>SAF 2023</p>
+            </div>
+            <div class="campus-card">
+                <img src="funrun.jpg" alt="Industrial Visit">
+                <p>Color Fun Run</p>
+            </div>
+            <div class="campus-card">
+                <img src="festkon.jpg" alt="Festival Celebration">
+                <p>Festival Convocation</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
